@@ -1,0 +1,11 @@
+curl --location --request GET 'localhost:9010/api/order/search' \
+--header 'Content-Type: application/json' \
+--data '   {
+        "orderNumber":"ORDER1003",
+        "skuCode":"SKU103",
+        "totalPrice":1530.00,
+        "quantity":4,
+        "page":0,
+        "size":10
+    }
+'
