@@ -29,7 +29,7 @@ public class InventoryController {
     }
     @PostMapping("/check")
     public ResponseEntity<ApiResponse<Boolean>> checkInventory(@RequestBody InventoryCheckDto checkDto) throws Exception {
-        return responseFactory.saveResponse(inventoryServices.checkInventory(checkDto));
+        return responseFactory.saveResponse(inventoryServices.isInStock(checkDto));
     }
 
     @GetMapping("/search")
