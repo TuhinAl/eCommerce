@@ -27,9 +27,11 @@ public class InventoryController {
     public ResponseEntity<ApiResponse<InventoryDto>> save(@RequestBody InventoryDto productDto) throws Exception {
         return responseFactory.saveResponse(inventoryServices.save(productDto));
     }
+
+    //todo why GET method is not worked here need to investigate
     @PostMapping("/check")
     public ResponseEntity<ApiResponse<Boolean>> checkInventory(@RequestBody InventoryCheckDto checkDto) throws Exception {
-        return responseFactory.saveResponse(inventoryServices.isInStock(checkDto));
+        return responseFactory.getResponse(inventoryServices.isInStock(checkDto));
     }
 
     @GetMapping("/search")

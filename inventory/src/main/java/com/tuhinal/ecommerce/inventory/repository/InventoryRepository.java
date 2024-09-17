@@ -10,9 +10,9 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface InventoryRepository extends JpaRepository<Inventory, String> {
 
-    @Override
+/*    @Override
     @Query(value = "select * from product_info pi where pi.enabled is true ", nativeQuery = true)
-    Page<Inventory> findAll(Pageable pageablfe);
+    Page<Inventory> findAll(Pageable pageablfe);*/
 
-    boolean existsBySkuCodeAndQuantityIsGreaterThanEqualAndEnabled(String skuCode, Integer quantity, Boolean isEnabled);
+    boolean existsBySkuCodeAndQuantityIsGreaterThanEqual(String skuCode, Integer quantity);
 }

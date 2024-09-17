@@ -38,8 +38,8 @@ public class InventoryServices {
     public Boolean isInStock(InventoryCheckDto inventoryCheckDto) {
 
         if (Objects.nonNull(inventoryCheckDto.getSkuCode()) && Objects.nonNull(inventoryCheckDto.getQuantity())) {
-            return inventoryRepository.existsBySkuCodeAndQuantityIsGreaterThanEqualAndEnabled(inventoryCheckDto.getSkuCode(),
-                    inventoryCheckDto.getQuantity(), Boolean.TRUE);
+            return inventoryRepository.existsBySkuCodeAndQuantityIsGreaterThanEqual(inventoryCheckDto.getSkuCode(),
+                    inventoryCheckDto.getQuantity());
         } else return false;
     }
 
