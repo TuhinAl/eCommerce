@@ -23,9 +23,9 @@ public class OrderController {
     }
 
 
-    @PostMapping()
-    public ResponseEntity<ApiResponse<OrderDto>> save(@RequestBody OrderDto productDto) throws Exception {
-        return responseFactory.saveResponse(orderService.save(productDto));
+    @PostMapping("/place")
+    public ResponseEntity<ApiResponse<OrderDto>> placeOrder(@RequestBody OrderDto productDto) throws Exception {
+        return responseFactory.saveResponse(orderService.placeOrder(productDto));
     }
 
     @GetMapping("/search")
