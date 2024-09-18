@@ -42,7 +42,7 @@ public class Routes {
     public RouterFunction<ServerResponse> orderServiceSaveRoute() {
         return GatewayRouterFunctions
                 .route("order_service")
-                .route(RequestPredicates.path("/api/order"), HandlerFunctions.http("http://localhost:9020"))
+                .route(RequestPredicates.path("/api/order/place"), HandlerFunctions.http("http://localhost:9020"))
                 .filter(CircuitBreakerFilterFunctions.circuitBreaker("orderServiceCircuitBreaker",
                         URI.create("forward:/fallbackRoute")))
                 .build();
