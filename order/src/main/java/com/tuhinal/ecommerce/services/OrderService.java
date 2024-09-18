@@ -54,12 +54,20 @@ public class OrderService {
             OrderPlacedEvent event = new OrderPlacedEvent();
             event.setOrderId(persistedOrder.getId());
             event.setEmail(orderDto.getEmail());
+            event.setFirstName("Alauddin");
+            event.setLastName("Tuhin");
             log.info("Start sending {} order placed event to topic.", event);
             kafkaTemplate.send("order-placed", event);
             log.info("start sending {} order placed event to topic.", event);
         }
         return TransformUtil.copyProp(persistedOrder, OrderDto.class);
     }
+/*
+docker-compose down
+sudo rm -rf volume-data/
+docker-compose build
+docker-compose up -d
+*/
 
     public Page<OrderDto> search(OrderSearchDto searchDto) {
 

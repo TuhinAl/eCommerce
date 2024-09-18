@@ -12,4 +12,6 @@ import lombok.Setter;
 public class OrderPlacedEvent {
     private String orderId;
     private String email;
+    private String firstName;
+    private String lastName;
 }
