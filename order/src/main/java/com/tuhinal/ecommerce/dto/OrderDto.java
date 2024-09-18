@@ -18,6 +18,7 @@ public class OrderDto {
 
     private String id;
     private String orderNumber;
+    private String email;
     private String skuCode;
     private Double totalPrice;
     private Integer quantity;
