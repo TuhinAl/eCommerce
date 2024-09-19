@@ -75,3 +75,24 @@ public class Routes {
                 .build();
     }
 }
+
+//todo docker file and folder mount and permission related problems
+/**
+ * check owner: ls -ld ./docker/tempo/
+ * 	output: drwxr-xr-x 2 root root 4096 Sep 17 12:34 ./docker/tempo/
+ *
+ * change ownership: sudo chown -R bjit:bjit ./docker/tempo/
+ * change permission: sudo chmod -R 755 ./docker/tempo/
+ * verify and Try agian:   touch ./docker/tempo/tempo.yml
+ * 						nano ./docker/tempo/tempo.yml
+ */
+
+/**
+ * check owner: ls -ld ./docker/grafana/
+ * 	output: drwxr-xr-x 2 root root 4096 Sep 17 12:34 ./docker/grafana/
+ *
+ * change ownership: sudo chown -R bjit:bjit ./docker/grafana/
+ * change permission: sudo chmod -R 755 ./docker/grafana/
+ * verify and Try agian:   touch ./docker/grafana/datasource.yml
+ * 						nano ./docker/tempo/tempo.yml
+ */
