@@ -1,6 +1,6 @@
 package com.tuhinal.ecommerce.order;
 
-import com.altuhin.ecommerce.OrderApplication;
+import com.tuhinal.ecommerce.OrderApplication;
 import org.springframework.boot.SpringApplication;
 
 public class TestOrderApplication {

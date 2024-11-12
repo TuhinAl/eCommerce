@@ -1,8 +1,8 @@
 package com.tuhinal.ecommerce.controller;
 
 
-import com.tuhinal.ecommerce.dto.OrderDto;
-import com.tuhinal.ecommerce.dto.req_dto.OrderSearchDto;
+import com.altuhin.common.order.OrderDto;
+import com.altuhin.common.order.OrderSearchDto;
 import com.tuhinal.ecommerce.services.OrderService;
 import com.tuhinal.ecommerce.utils.ApiResponse;
 import com.tuhinal.ecommerce.utils.ApiResponseEntityFactory;

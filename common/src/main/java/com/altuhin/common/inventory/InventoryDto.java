@@ -1,4 +1,4 @@
-package com.tuhinal.ecommerce.inventory.dto.req_dto;
+package com.altuhin.common.inventory;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -9,7 +9,7 @@ import lombok.Setter;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class InventorySearchDto extends SearchDto{
+public class InventoryDto {
 
     private String id;
     private String skuCode;

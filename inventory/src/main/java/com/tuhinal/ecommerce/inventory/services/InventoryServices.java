@@ -1,8 +1,9 @@
 package com.tuhinal.ecommerce.inventory.services;
 
-import com.tuhinal.ecommerce.inventory.dto.InventoryDto;
-import com.tuhinal.ecommerce.inventory.dto.req_dto.InventoryCheckDto;
-import com.tuhinal.ecommerce.inventory.dto.req_dto.InventorySearchDto;
+
+import com.altuhin.common.inventory.InventoryCheckDto;
+import com.altuhin.common.inventory.InventoryDto;
+import com.altuhin.common.inventory.InventorySearchDto;
 import com.tuhinal.ecommerce.inventory.entity.Inventory;
 import com.tuhinal.ecommerce.inventory.repository.InventoryRepository;
 import org.springframework.data.domain.Page;

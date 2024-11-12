@@ -1,4 +1,4 @@
-package com.tuhinal.ecommerce.inventory.dto;
+package com.altuhin.common.product;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -9,10 +9,12 @@ import lombok.Setter;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class InventoryDto {
+public class ProductDto {
 
     private String id;
-    private String skuCode;
+    private String name;
+    private String description;
+    private Double price;
     private Integer quantity;
     private Boolean enabled;
 }

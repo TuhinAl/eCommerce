@@ -1,7 +1,8 @@
 package com.tuhinal.product.services;
 
-import com.tuhinal.product.dto.ProductDto;
-import com.tuhinal.product.dto.req_dto.ProductSearchDto;
+
+import com.altuhin.common.product.ProductDto;
+import com.altuhin.common.product.ProductSearchDto;
 import com.tuhinal.product.entity.Product;
 import com.tuhinal.product.repository.ProductRepository;
 import org.springframework.data.domain.Page;
@@ -34,7 +35,7 @@ public class ProductServices {
     public Page<ProductDto> search(ProductSearchDto searchDto) {
 
         Pageable pageable = PageRequest.of(searchDto.getPage(), searchDto.getSize());
-
+        // todo need to add QueryDSL
          Page<Product> allProducts = productRepository.findAll(pageable);
         List<ProductDto> list = allProducts.stream().map(product -> copyProp(product, ProductDto.class)).toList();
         return new PageImpl<>(list, pageable, searchDto.getSize());

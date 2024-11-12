@@ -1,7 +1,7 @@
 package com.tuhinal.product.controller;
 
-import com.tuhinal.product.dto.ProductDto;
-import com.tuhinal.product.dto.req_dto.ProductSearchDto;
+import com.altuhin.common.product.ProductDto;
+import com.altuhin.common.product.ProductSearchDto;
 import com.tuhinal.product.services.ProductServices;
 import com.tuhinal.product.utils.ApiResponse;
 import com.tuhinal.product.utils.ApiResponseEntityFactory;

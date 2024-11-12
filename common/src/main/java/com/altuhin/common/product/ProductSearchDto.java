@@ -1,5 +1,6 @@
-package com.tuhinal.product.dto.req_dto;
+package com.altuhin.common.product;
 
+import com.altuhin.common.search.SearchDto;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -9,7 +10,7 @@ import lombok.Setter;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class ProductSearchDto extends SearchDto{
+public class ProductSearchDto extends SearchDto {
 
     private String id;
     private String name;

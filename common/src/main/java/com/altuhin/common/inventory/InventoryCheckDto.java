@@ -1,4 +1,4 @@
-package com.tuhinal.product.dto.req_dto;
+package com.altuhin.common.inventory;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -9,7 +9,7 @@ import lombok.Setter;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class SearchDto {
-    private Integer page = 0;
-    private Integer size = 10;
+public class InventoryCheckDto {
+    private String skuCode;
+    private Integer quantity;
 }

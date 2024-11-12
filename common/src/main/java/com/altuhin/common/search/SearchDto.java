@@ -1,4 +1,4 @@
-package com.tuhinal.ecommerce.inventory.dto.req_dto;
+package com.altuhin.common.search;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

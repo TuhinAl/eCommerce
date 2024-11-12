@@ -1,8 +1,8 @@
 package com.tuhinal.ecommerce.inventory.controller;
 
-import com.tuhinal.ecommerce.inventory.dto.InventoryDto;
-import com.tuhinal.ecommerce.inventory.dto.req_dto.InventoryCheckDto;
-import com.tuhinal.ecommerce.inventory.dto.req_dto.InventorySearchDto;
+import com.altuhin.common.inventory.InventoryCheckDto;
+import com.altuhin.common.inventory.InventoryDto;
+import com.altuhin.common.inventory.InventorySearchDto;
 import com.tuhinal.ecommerce.inventory.services.InventoryServices;
 import com.tuhinal.ecommerce.inventory.utils.ApiResponse;
 import com.tuhinal.ecommerce.inventory.utils.ApiResponseEntityFactory;

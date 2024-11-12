@@ -1,6 +1,6 @@
-package com.tuhinal.ecommerce.dto.req_dto;
+package com.altuhin.common.order;
 
-import com.fasterxml.jackson.annotation.JsonFormat;
+import com.altuhin.common.search.SearchDto;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -13,7 +13,6 @@ import lombok.experimental.Accessors;
 @NoArgsConstructor
 @AllArgsConstructor
 @Accessors(chain = true)
-@JsonFormat
 public class OrderSearchDto extends SearchDto {
 
     private String id;
